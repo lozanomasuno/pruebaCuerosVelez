@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+/*Hoja de estilos diseñada por nelson Lozano*/
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@media (max-width: 600px) { 
+   .hotSale, p, h1 {
+     font-size: 3em !important;
+     color: white !important;
+   }
+
+   .insideOffers .container .hotSale button{      
+     width:200px;
+     border: red !important;
+   }
+   .hotSale{
+     display: block !important;
+   }
+   .accesories{
+    display: block !important;
+   }
+
+   .insideOffers .container div{
+    margin: 1px;
+   }
+
+   .genderSection div span {
+     font-size: 20px;
+    }
+    
+  .modal {
+    width: 50% !important; 
+    height: 100% !important; 
+    overflow: unset !important; 
+  }
+
+  .floating-window{
+      margin: none;
+      width: 100% !important;
+      background: none !important;
+   }
+
+  .insideFloating-window {
+    border-radius: 0 !important;
+    font-size: 4em !important;      
+  }
+
+  .insideFormSubscribe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .formSuscribe{
+    padding-top: 0 !important;
+    height: 0 !important;
+  }
+
+  select {
+    border: none;
+    font-size: 14px !important;
+    height: 30px !important;
+    padding: 0;
+    width: 125px !important;
+  }
+
+  .contain {
+    padding: 0 0 !important;
+    padding: 0 !important;
+  }
+  
+}
+
+* {
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+}
+
+.offers{  
+    background-image: url('./img/people.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+a {
+  color: white;
+}
+
+.insideOffers{
+    width: 100%;
+    height: 60vh; 
+    color: white;   
+    line-height: 0.8em;
+    font-weight:800;    
+    background-position:center;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.8) 10%, rgba(255,3,0,0.7) 100%);
+    background-repeat: no-repeat;
+}
+
+.insideOffers .container{
+    display: flex;
+    width: 95%;
+    height: 80%;
+    letter-spacing: 0.7em;
+    font-weight: 200;
+    border: 1px solid white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.insideOffers .container div{
+    margin: 20px;
+}
+
+.insideOffers .container div:first-child{
+  margin: 0;
+  font-weight: 500;
+}
+
+.insideOffers .container div button{
+  color: red;
+  font-weight: 300;
+  margin-bottom: 14px;
+  margin-top: -14px;
+  padding: 14px;
+  background-color: #fff;
+  border: 1px solid #fafafa;
+  border-radius: 45px;
+  cursor:pointer;
+  width:400px;
+}
+
+.insideOffers .container div button:active{
+  color: #b1241a;
+  padding: 12px;
+}
+
+.insideOffers .container div button:hover{
+  color: white;
+  background: red;
+  font-weight: 600;  
+  border: 1px solid #ffc3c3;  
+}
+
+.insideOffers .container div p:first-child{
+  margin-top: 0.5em;
+  font-size: 8em;
+}
+
+.insideOffers .container h1:first-child{
+  position: relative;    
+  font-size: 8em;
+  color: white;
+  line-height: 25px;
+}
+
+.insideOffers .container h1:nth-child(2n){
+  font-size: 10em;
+  color: red;
+  font-weight: 300;
+  margin-bottom: 0.7em;
+}
+
+.insideOffers .container span:nth-child(1n){
+    font-size: 2em;  
+}
+.insideOffers span{
+    font-size: 8.5em;  
+}
+
+.accesories{
+    background-image: url('./img/accesories.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.accesories a{
+    text-decoration:none;
+}
+.insideAccesories{
+    width: 100%;
+    height: 60vh; 
+    color: white;   
+    line-height: 0.8em;
+    font-weight:800;    
+    background-position:center;
+    background: linear-gradient(120deg, rgba(15, 15, 15, 0.5) 10%, rgba(255,3,0,0.7) 100%);
+    background-repeat: no-repeat;
+}
+
+.genderSection{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;  
+}
+
+.genderSection div{
+    flex: 0 1 300px;
+    flex: 1 1 300px;     
+    overflow: hidden;    
+    font-size: 4em;   
+    width: 400px;
+    height: 400px;    
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 1s;
+    transition-timing-function: ease;        
+}
+
+
+.genderSection div span{
+    padding: 10px 5px 5px 10px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.genderSection div:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);    
+}
+
+.genderSection div:nth-child(1n){
+    background-image: url('./img/hom.jpg');    
+}
+
+.genderSection div:nth-child(2n){
+    background-image: url('./img/muj.jpg');
+}
+
+.modal {
+    display: none; 
+    text-decoration: none;
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+  }
+
+.floating-window{
+    margin: auto;
+    width: 40%;  
+    background-image: url('https://static.diariofemenino.com/uploads/salud/1242-sexo.jpg');
+    background-position: cover;
+    background-repeat: repeat;
+    border-radius: 34px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.8s;
+    animation-name: animatetop;
+    animation-duration: 0.8s
+}
+
+.floating-window img{
+    float: right;
+}
+
+.insideFloating-window{
+    border-radius: 34px;    
+    place-items: center;
+    padding: 8px;
+    font-size: 7em;    
+    line-height: 0.8em;
+    font-weight:800;
+    color: white; 
+    background-color: rgba(128, 128, 128, 0.534); 
+}
+.insideFloating-window span:first-child span:nth-child(2n){
+    font-size: 0.5em;
+    letter-spacing: 1.5em;
+    font-weight: 200;
+}
+.insideFloating-window span:nth-child(2n){
+    font-weight: 800;
+}
+.insideFloating-window span:nth-child(3n){
+    font-weight: 800;
+}   
+
+.close {
+    padding-right: 14px;
+    color: #ff5100;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box {
+    max-width: 600px;
+    width: 95%;
+    height: 95%;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font: 700 18px/1 "Lato", sans-serif;
+    cursor: pointer;
+  }
+
+  .box:hover {
+    transition: 0.5s all ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: red;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font: 700 18px/1 "Lato", sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .ribbon-top-right {
+    top: -10px;
+    right: -10px;
+  }
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .ribbon-top-right::before {
+    top: 0;
+    left: 0;
+  }
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+  .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  
+
+  .productDescription {
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    line-height: 0.5em;
+  }
+
+  .productDescription span {
+    font-size: 0.7em;
+    font-weight: 100;
+  }
+
+  .productDescription h1 {
+    font-size: 28px;
+    margin: 0.5em;
+    color: black;
+  }
+  .slide .box{
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .article1{
+    background: url(./img/product1.jpg);
+  }
+
+  .article2{
+    background: url(./img/product2.jpg);
+  }
+
+  .article3{
+    background: url(./img/product3.jpg);
+  }
+
+  .article4{
+    background: url(./img/product4.jpg);
+  }
+
+  .article5{
+    background: url(./img/product5.jpg);
+  }
+  .article6{
+    background: url(./img/product6.jpg);
+  }
+  .article7{
+    background: url(./img/product7.jpg);
+  }
+  .carousel {
+    position: relative;
+    width: 95%;
+    height: 550px;
+    margin: 0 auto;
+  }
+
+  .carousel-content {
+    position: relative;
+    overflow: hidden;
+    transition: width 0.4s;
+    height: 100%;
+  }
+
+  .slide {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    position: absolute;
+    z-index: 1;
+    transition: left 0.4s cubic-bezier(0.47, 0.13, 0.15, 0.89);
+    margin: 1px solid gray;
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-color: rgba(150, 150, 150, 0.3);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    -webkit-user-select: none;
+  }
+
+  .nav-left {
+    left: -25px;
+  }
+
+  .nav-right {
+    right: -25px;
+  }
+
+  .carousel-arrow-icon-left {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+.carousel-arrow-icon-right {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+.formSuscribe{
+  padding-top: 150px;
+  height: 80vh;
+  display: none;
+}
+.formSuscribe p{
+  float: right;
+  padding-left: 2px;
+  cursor: pointer;  
+}
+.error{
+  border: 1px solid red;
+  background-color:lightpink;
+}
+.formSuscribe p:hover{
+  color: red;
+}
+.contain {
+  padding: 2em 2em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  padding: 0;
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid rgb(39, 39, 39);
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.insideFormSubscribe{
+  width: 100%;
+  height: 49vh;    
+  line-height: 0.8em;
+  font-weight:800;  
+}
+
+form {
+  max-width: 600px;
+  width: 95%;
+  height: 95%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 1.8em;
+  margin-top: 2em;  
+  color: gray;  
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 25px;
+}
+
+form p {
+  margin: 0;
+}
+
+form p a{
+  color: red;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.full-width {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+input {
+  padding: 1em;
+  border:1px solid #d9d9d9;
+}
+
+button { 
+  color: red;
+  font-weight: 300;
+  padding: 14px;
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 45px;
+  cursor:pointer;
+}
+
+button:hover {
+  outline: 0;
+  color: white;
+  background: red;
+  font-weight: 600;  
+  border: 1px solid #ffc3c3;
+}
+
+button:active{
+  color: #b1241a;
+  padding: 12px;
+}
+
+.caja {
+   border:1px solid #d9d9d9;
+   height:40px;
+   overflow: hidden;
+   width: 255px;
+   position:relative;
+   
+}
+select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 30px;
+   padding: 0;
+   width: 250px;
+}
+select:focus{ outline: none;}
+
+
+.caja::after{
+	content:"\025be";
+	display: table-cell;
+	padding-top:7px;
+	text-align:center;
+	width:30px;
+	height:30px;
+	background-color:#d9d9d9;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+.alertMessage{ 
+  font-size:14px;
+  font-weight: 200;
+  color: red;
+  border-radius: 12px;
+}
+.alertMessage{
+  display: none;
+}
+::placeholder {
+  color: rgb(168, 168, 168);
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.formSaveData{
+  display: none;
+  width: 140px;
+  height: 140px;  
+  margin: auto;
+  width: 50%;
+  position: fixed; 
+  z-index: 1000; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.6);
+
+}
+
+.insideFormSaveDta{  
+  background-color: white;
+  border: 1px solid gray;
+  width: 100%;
+  height: 10vh; 
+  padding: 10px;  
+  font-size: 40px;
+  font-weight: 400;
+}
